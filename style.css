@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.section-book{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #165d7e, #99f5ad);
+    position: relative;
+}
+.book{
+    width: 70%;
+    height: 80%;
+    background-image: linear-gradient(25deg, #165d7e 0%, #47a7d4 60%, transparent 0%), url("bg\ \(2\).jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4 rem rgba(0,0,0,0.2);
+
+}
+.book-form{
+    width: 50%;
+    padding: 7rem;
+}
+.heading{
+    font-size: 5.4rem;
+    margin-bottom: 2rem;
+    color: white;
+    font-weight: 100;
+
+}
+
+.form-group{
+    margin-bottom: 0.5rem;
+}
+.form-group:nth-child(3){
+    margin-bottom: 0.5rem;
+}
+
+.form-input{
+    font-size: 1.5rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 0.9rem 1rem;
+    background-color:transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 80%;
+    display: block;
+    transition: all 0.3;
+}
+.form-input:focus{
+    outline: none;
+
+}
+.form-input:focus:invalid{
+    border-bottom: 2px solid rgb(0, 255, 170);
+
+}
+.form-input::-webkit-input-placeholder{
+    color: white;
+}
+
+.form-label{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+}
+
+.form-input:placeholder-shown + .form-label{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+}
+
+.form-radio-label{
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    padding-left: 1rem;
+    color: white;
+}
+
+input[type="checkbox"]{
+   
+    accent-color: #99f5ad;
+}
+input[type="checkbox"]:checked{
+    accent-color: #99f5ad;
+}
+ 
+
+
+.btn , .btn:link, btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding:  1rem 11rem;
+    display: inline-block;
+    transition: all 0.2s;
+    position: inherit;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    margin-top: 3rem;
+    background-color:#99f5ad;
+    color:#165d7e ;
+    
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+}
+.btn:active, .btn:focus{
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+}
+
+img{
+    position: absolute;
+    top: 65%;
+    right: 15%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
